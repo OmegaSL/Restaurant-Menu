@@ -11,7 +11,7 @@
 							<div class="row">
 								<div class="col-xl-6">
 									<div class="text-center my-5">
-										<a href="index.html">
+										<a href="{{ url('/') }}">
 											<img
 												src="{{ $setting->site_logo != null ? asset('storage/' . $setting->site_logo) : asset('assets/auth/images/logo-full.png') }}"
 												alt="">
