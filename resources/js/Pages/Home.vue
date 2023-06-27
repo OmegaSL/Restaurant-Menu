@@ -19,7 +19,7 @@
                     </div>
                 </div>
 
-                <div class="row" v-if="menu_category.menu_items.length > 0 && menu_category.menu_items.every(i => !!i)">
+                <div class="row mb-3" v-if="menu_category.menu_items.length > 0 && menu_category.menu_items.every(i => !!i)">
                     <!-- LEFT COLUMN -->
                     <div class="col-lg-6" v-for="menu_item in menu_category.menu_items" :key="index">
                         <div class="menu-3-txt">
@@ -52,6 +52,7 @@
                                 </li>
                             </ul>
                         </div>
+                        <hr>
                     </div>
                 </div> <!-- End row -->
             </div> <!-- END MENU-3 WRAPPER -->

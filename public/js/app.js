@@ -17988,7 +17988,7 @@ var _hoisted_7 = {
 };
 var _hoisted_8 = {
   key: 0,
-  "class": "row"
+  "class": "row mb-3"
 };
 var _hoisted_9 = {
   "class": "menu-3-txt"
@@ -18023,7 +18023,8 @@ var _hoisted_18 = {
 var _hoisted_19 = {
   "class": "menu-item-desc"
 };
-var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"banner-4\" class=\"bg-fixed wide-100 banner-section division\"><div class=\"container\"><div class=\"row\"><!-- BANNER TEXT --><div class=\"col-lg-10 col-xl-8 offset-lg-1 offset-xl-2\"><div class=\"banner-4-txt text-center\"><!-- Title  --><h4 class=\"h4-xl\">We Guarantee</h4><!-- Title  --><h2>30 Minutes Delivery!</h2><!-- Text --><p class=\"p-lg\">Aliquam a augue suscipit, luctus neque purus ipsum neque undo dolor primis libero tempus, blandit a cursus varius luctus neque magna </p><!-- Call Button --></div></div></div><!-- End row --></div><!-- End container --></section>", 1);
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("hr", null, null, -1 /* HOISTED */);
+var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"banner-4\" class=\"bg-fixed wide-100 banner-section division\"><div class=\"container\"><div class=\"row\"><!-- BANNER TEXT --><div class=\"col-lg-10 col-xl-8 offset-lg-1 offset-xl-2\"><div class=\"banner-4-txt text-center\"><!-- Title  --><h4 class=\"h4-xl\">We Guarantee</h4><!-- Title  --><h2>30 Minutes Delivery!</h2><!-- Text --><p class=\"p-lg\">Aliquam a augue suscipit, luctus neque purus ipsum neque undo dolor primis libero tempus, blandit a cursus varius luctus neque magna </p><!-- Call Button --></div></div></div><!-- End row --></div><!-- End container --></section>", 1);
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Hero = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Hero");
   var _component_Link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Link");
@@ -18047,9 +18048,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         }),
 
         _: 2 /* DYNAMIC */
-      }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["href"])])])])]);
+      }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["href"])])])]), _hoisted_20]);
     }), 128 /* KEYED_FRAGMENT */))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End row ")]);
-  }), 256 /* UNKEYED_FRAGMENT */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END MENU-3 WRAPPER ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End container ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END MENU-3 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" BANNER-4 ============================================= "), _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END BANNER-4 ")], 64 /* STABLE_FRAGMENT */);
+  }), 256 /* UNKEYED_FRAGMENT */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END MENU-3 WRAPPER ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End container ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END MENU-3 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" BANNER-4 ============================================= "), _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END BANNER-4 ")], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
