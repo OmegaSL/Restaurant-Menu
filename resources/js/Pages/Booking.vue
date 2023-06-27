@@ -60,7 +60,7 @@
                             </div>
 
                             <!-- Form Input -->
-                            <div class="col-lg-6">
+                            <div class="col-lg-12">
                                 <input type="text" v-model="form.phone" :name="phone" :id="phone" class="form-control phone"
                                     placeholder="Phone Number*">
 

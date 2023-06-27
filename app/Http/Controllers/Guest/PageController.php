@@ -11,7 +11,16 @@ class PageController extends Controller
     public function main_menu()
     {
         return Inertia::render("Home", [
-            "menu_categories" => \App\Models\MenuCategory::with("menu_items")->get()
+            "menu_categories" => \App\Models\MenuCategory::query()
+                ->with(["menu_items" => function ($query) {
+                    $query->where("status", "active")->orderBy("name", "asc");
+                }])
+                // ->whereHas("menu_items", function ($query) {
+                //     $query->where("status", "active");
+                // })
+                // ->orderBy("name", "asc")
+                ->get()
+            // ->sortByDesc('menu_items.name')
         ]);
     }
 

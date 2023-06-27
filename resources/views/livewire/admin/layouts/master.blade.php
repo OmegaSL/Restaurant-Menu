@@ -41,18 +41,7 @@
 		@include('livewire.admin.shared.sidebar')
 		@yield('content')
 
-		<!--********************************** Footer start ***********************************-->
-		<div class="footer">
-			<div class="copyright">
-				<p>
-					Copyright © Developed &amp; Powered by
-					<a href="https://www.zelustechnologies.com" target="_blank">
-						Zelus Technologies
-					</a> 2023
-				</p>
-			</div>
-		</div>
-		<!--********************************** Footer end ***********************************-->
+		@include('livewire.admin.shared.footer')
 	</div>
 	<!--********************************** Main wrapper end ***********************************-->
 

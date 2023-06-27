@@ -152,7 +152,7 @@
 							</svg>
 
 							<h4 class="text-white mb-3">Manage <br />your menu with ease</h4>
-							<a href="javascript:void(0);" class="d-flex text-light align-items-center justify-content-between">
+							<a href="{{ route('menu.items') }}" class="d-flex text-light align-items-center justify-content-between">
 								<small>Add a wide range menu's, update anytime. </small>
 								<i class="ti-arrow-right"></i>
 							</a>

@@ -114,7 +114,7 @@
 
                             <!-- Product Data -->
                             <div class="product-info">
-                                <p>Portion Size: <span>{{ menu_item.size }}</span></p>
+                                <p class="text-uppercase">Portion Size: <strong>{{ menu_item.size }}</strong></p>
                                 <!-- <p>Calories: <span>680Kj</span></p>
                                 <p>Allergies: <span>Lactose, Gluten, Mustard</span></p>
                                 <p>Tags: <span>Burgers, Fast Food, Testo</span></p> -->
@@ -128,7 +128,7 @@
                             </div> -->
 
                             <!-- List -->
-                            <ul class="txt-list">
+                            <!-- <ul class="txt-list">
                                 <li class="list-item">
                                     <p class="p-sm">We accept credit cards or cash to a courier</p>
                                 </li>
@@ -138,7 +138,7 @@
                                 <li class="list-item">
                                     <p class="p-sm">Order before noon for same day dispatch</p>
                                 </li>
-                            </ul>
+                            </ul> -->
 
                         </div> <!-- END TEXT-->
 

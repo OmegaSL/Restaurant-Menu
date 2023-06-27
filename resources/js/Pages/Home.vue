@@ -19,7 +19,8 @@
                     </div>
                 </div>
 
-                <div class="row mb-3" v-if="menu_category.menu_items.length > 0 && menu_category.menu_items.every(i => !!i)">
+                <div class="row mb-3"
+                    v-if="menu_category.menu_items.length > 0 && menu_category.menu_items.every(i => !!i)">
                     <!-- LEFT COLUMN -->
                     <div class="col-lg-6" v-for="menu_item in menu_category.menu_items" :key="index">
                         <div class="menu-3-txt">
@@ -27,7 +28,6 @@
                                 <!-- MENU ITEM-1 -->
                                 <li class="menu-3-item">
                                     <Link :href="'/menu_item/' + menu_item.slug" preserve-state preserve-scroll>
-
                                     <!-- Title & Price -->
                                     <div class="menu-title-wrapper rel">
                                         <div class="menu-item-title">
@@ -70,22 +70,14 @@
                 <!-- BANNER TEXT -->
                 <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
                     <div class="banner-4-txt text-center">
-
                         <!-- Title  -->
                         <h4 class="h4-xl">We Guarantee</h4>
-
-                        <!-- Title  -->
                         <h2>30 Minutes Delivery!</h2>
 
                         <!-- Text -->
-                        <p class="p-lg">Aliquam a augue suscipit, luctus neque purus ipsum neque undo dolor primis libero
-                            tempus,
-                            blandit a cursus varius luctus neque magna
+                        <p class="p-lg">
+                            We guarantee that your order will be delivered within 30 minutes of placing your order.
                         </p>
-
-                        <!-- Call Button -->
-
-
                     </div>
                 </div>
 
