@@ -5,7 +5,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<h4 class="modal-title">Add Menu </h4>
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true" wire:click='resetForm'>×</button>
 			</div>
 			<form id="add-expense">
 				<div class="modal-body p-4">
@@ -111,15 +111,20 @@
 								<form>
 									<div class="form-group">
 										<label for="field-2" class="control-label">Description</label>
-										<textarea class="form-control" rows="4" id="comment"></textarea>
+										<textarea class="form-control" rows="4" wire:model.defer='description'></textarea>
 									</div>
+
+									@error('description')
+										<span class="text-danger">{{ $message }}</span>
+									@enderror
 								</form>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal"
+						wire:click='resetForm'>Close</button>
 					<button type="submit" class="btn btn-info waves-effect waves-light" wire:click='storeMenuItem'>
 						Save New
 					</button>

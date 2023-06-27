@@ -82,10 +82,41 @@
 
 			<div class="add-menu-sidebar">
 				<img src="{{ asset('assets/images/icon1.png') }}" alt="" />
-				<p>Organize your menus through button bellow</p>
-				<a href="{{ route('menu.items') }}" class="btn btn-primary btn-block light">+ Add Menus</a>
+				<p>Browse your with this QR Code Generator</p>
+				<a href="#!" data-toggle="modal" data-target="#exampleModal" class="btn btn-primary btn-block light">+
+					QRCode</a>
 			</div>
 
 	</div>
 </div>
 <!--********************************** Sidebar end ***********************************-->
+
+<!-- Modal -->
+<div wire:ignore.self class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false"
+	tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-xl modal-fullscreen" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Main Menu QRCode</h5>
+			</div>
+			<div class="modal-body">
+				<div class="visible-print text-center">
+					{!! QrCode::size(500)->generate(url('/')) !!}
+					{{-- <p>{{ $setting != null ? $setting->site_name : config('app.name') }}</p> --}}
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				{{-- <button type="button" class="btn btn-primary" onclick="functionPrint()">Print</button> --}}
+			</div>
+		</div>
+	</div>
+</div>
+
+@section('scripts')
+	<script>
+		function functionPrint() {
+			window.print();
+		}
+	</script>
+@endsection

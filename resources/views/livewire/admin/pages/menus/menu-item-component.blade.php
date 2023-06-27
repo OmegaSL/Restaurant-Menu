@@ -91,7 +91,9 @@
 																				alt="Restaurant Food">
 																		@endif
 																		<div class="media-body">
-																			<small class="mt-0 mb-1 text-primary font-w500">MAIN COURSE</small>
+																			<small class="mt-0 mb-1 text-primary font-w500 text-uppercase">
+																				{{ $menu_item->menu_category?->name ?? 'Not Specified' }}
+																			</small>
 																			<h5 class="mt-0 mb-2 text-black mb-4">{{ $menu_item->name }}</h5>
 																		</div>
 																	</div>

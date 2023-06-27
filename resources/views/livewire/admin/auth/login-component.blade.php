@@ -23,7 +23,9 @@
 								</div>
 								<div class="col-xl-6">
 									<div class="auth-form">
-										<h3 class="text-start mb-4 font-w600">Login to Davur</h3>
+										<h3 class="text-start mb-4 font-w600">
+											Login to {{ $setting != null ? $setting->site_name : config('app.name') }}
+										</h3>
 										<form wire:submit.prevent='login'>
 											<div class="form-group">
 												<label class="mb-1 text-black">Email<span class="required">*</span></label>

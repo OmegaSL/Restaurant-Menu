@@ -34,7 +34,9 @@ class MenuItemComponent extends Component
     public function render()
     {
         return view('livewire.admin.pages.menus.menu-item-component', [
-            'menu_items' => \App\Models\MenuItem::latest()->paginate(10),
+            'menu_items' => \App\Models\MenuItem::query()
+                ->with('menu_category')
+                ->latest()->paginate(10),
             'categories' => \App\Models\MenuCategory::latest()->get(),
         ])->extends('livewire.admin.layouts.master');
     }
